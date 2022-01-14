@@ -1,0 +1,6 @@
+[
+  { "name": "Arus",   "role": "warrior",   "stats": { "str": 20, "agi": 5,  "int": 1,  "vit": 10, "luck": 5,  "hitRate": 5,  "maxHP": 35, "HP": 35, "maxMP": 0,  "MP": 0,  "lvl": 1, "exp": 0 } },
+  { "name": "Wedge",  "role": "thief",     "stats": { "str": 5,  "agi": 10, "int": 5,  "vit": 5,  "luck": 15, "hitRate": 10, "maxHP": 30, "HP": 30, "maxMP": 0,  "MP": 0,  "lvl": 1, "exp": 0 } },
+  { "name": "Jenica", "role": "whiteMage", "stats": { "str": 5,  "agi": 5,  "int": 15, "vit": 10, "luck": 5,  "hitRate": 5,  "maxHP": 28, "HP": 33, "maxMP": 10, "MP": 10, "lvl": 1, "exp": 0 } },
+  { "name": "Topapa", "role": "blackMage", "stats": { "str": 1,  "agi": 10, "int": 20, "vit": 1,  "luck": 10, "hitRate": 5,  "maxHP": 25, "HP": 25, "maxMP": 10, "MP": 10, "lvl": 1, "exp": 0 } }
+]

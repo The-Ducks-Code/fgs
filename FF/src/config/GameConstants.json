@@ -1,0 +1,118 @@
+{
+  "KEY_CODES_MAPPING": {
+    "13": "enter",
+    "27": "escape",
+    "37": "left",
+    "38": "up",
+    "39": "right",
+    "40": "down"
+  },
+
+  "ASSETS_KEYS": {
+    "FF1_LOGO_IMG": "ff1logo",
+    "PROGRESS_BAR_IMG": "progressbar",
+    "WORLDMAP_IMG": "worldmap",
+    "MENU_BACKGROUND_IMG": "menuBackground",
+    "MENU_CURSOR_IMG": "menuCursor",
+    "STATUS_EFFECTS_IMG": "statuseffects",
+    "WORLDMAP_TILE_DATA_JSON": "worldmapData",
+    "WORLDMAP_PARTY_SPRITES_DATA_JSON": "worldMapPartySpritesData",
+    "IN_BATTLE_PARTY_SPRITES_DATA_JSON": "inBattlePartySpritesData",
+    "CHARACTERS_DATA_JSON": "characters",
+    "MONSTERS_DATA_JSON": "monsters",
+    "PARTY_DATA_JSON": "partyData",
+    "BATTLE_BACKGROUNDS_ATLAS": "battleBackgrounds",
+    "MONSTERS_ATLAS": "monstersAtlas"
+  },
+
+  "MAX_ENEMIES_IN_BATTLE": 9,
+  "MAX_ENEMY_TYPES_IN_BATTLE": 4,
+
+  "STATUS_DEF1": "def1",
+  "STATUS_DEF2": "def2",
+  "STATUS_DARKNESS": "darkness",
+  "STATUS_PARALYSIS": "paralysis",
+  "STATUS_POISON": "poison",
+  "STATUS_SILENCE": "silence",
+  "STATUS_STONE": "stone",
+  "STATUS_SLEEP": "sleep",
+  "STATUS_KO": "KO",
+  "STATUS_CONFUSION": "confusion",
+
+  "STATUS_EFFECTS_WITH_IMAGES": ["darkness", "paralysis", "poison", "silence", "sleep"],
+  "STATUS_EFFECTS": [
+    {
+      "name": "def1",
+      "duration": 2,
+      "recoveryChance": 0,
+      "effects": [
+        { "statName": "def", "updateBy": 25 }
+      ]
+    },
+    {
+      "name": "def2",
+      "duration": 2,
+      "recoveryChance": 0,
+      "effects": [
+        { "statName": "def", "updateBy": 50 }
+      ]
+    },
+    {
+      "name": "darkness",
+      "duration": 9007199254740992,
+      "recoveryChance": 0,
+      "effects": [
+        { "statName": "hitRate", "updateBy": -40 },
+        { "statName": "EVAS", "updateBy": -40 }
+      ]
+    },
+    {
+      "name": "paralysis",
+      "duration": 9007199254740992,
+      "recoveryChance": 25,
+      "effects": [
+        { "statName": "def", "updateBy": -25 },
+        { "statName": "EVAS", "updateBy": -100 }
+      ]
+    },
+    {
+      "name": "poison",
+      "duration": 9007199254740992,
+      "recoveryChance": 0,
+      "effects": []
+    },
+    {
+      "name": "silence",
+      "duration": 9007199254740992,
+      "recoveryChance": 0,
+      "effects": []
+    },
+    {
+      "name": "stone",
+      "duration": 9007199254740992,
+      "recoveryChance": 0,
+      "effects": []
+    },
+    {
+      "name": "sleep",
+      "duration": 9007199254740992,
+      "recoveryChance": 25,
+      "effects": [
+        { "statName": "def", "updateBy": -25 },
+        { "statName": "EVAS", "updateBy": -100 }
+      ]
+    },
+    {
+      "name": "KO",
+      "duration": 9007199254740992,
+      "recoveryChance": 0,
+      "effects": []
+    },
+    {
+      "name": "confusion",
+      "duration": 9007199254740992,
+      "recoveryChance": 25,
+      "effects": []
+    }
+  ]
+}
