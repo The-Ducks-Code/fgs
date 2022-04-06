@@ -142,11 +142,10 @@
         <div id="wasm-loading">
             Loading WebAssembly, please wait...
         </div>
-       <div id="select-rom" hidden>
-            <p>Select a game to start with:</p>
             <div id="select-rom" hidden>
                 <p>Select a game to start with:</p>
                 <select style="padding:.5em; border:2px" onchange="onHomebrewListSelected()" id="homebrew-list">
+                    <option value="">Select</option>
                     <option value="ff1+2">Final Fantasy 1+2</option>
                     <option value="fe">Fire Emblem</option>
                     <option value="m3">Mother 3</option>
@@ -160,8 +159,6 @@
                     <option value="sma3">Super Mario Advance 3</option>
                     <option value="sma4">Super Mario Advance 4</option>
                     <option value="wl4">Wario Land 4</option>
-    
-    
                 </select> 
 
             <p>choose your own file:<br><input style="padding:.5em; border:2px solid white;" type="file" id="romFile"
