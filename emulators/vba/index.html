@@ -421,7 +421,6 @@
             console.log('gameID', gameID)
             Module.HEAPU8.set(u8, romBuffer)
             var ret = Module._loadRom(u8.length)
-            document.getElementById('welcome').hidden = true
             loadSaveGame(0, function () {
                 Module._resetCpu()
                 isRunning = true
