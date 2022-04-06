@@ -1,8 +1,23 @@
+
 <!doctype html>
 <html lang="en">
 
 <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-134HXE8JTB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-134HXE8JTB');
+</script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="favicon.ico" />
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/bootstrap/bootstrap.bundle.min.js"></script>
+    <link href="/bootstrap/bootstrap.min.css" rel="stylesheet">
     <title>VBA</title>
 </head>
 
@@ -120,7 +135,7 @@
         <button onclick="savRestoreBtn()">Restore</button>
     </div>
 
-   
+    
 
         <h2>VBA</h2>
         <hr>
@@ -129,23 +144,25 @@
         </div>
        <div id="select-rom" hidden>
             <p>Select a game to start with:</p>
-            <select style="padding:.5em; border:2px" onchange="onHomebrewListSelected()" id="homebrew-list">
-                <option value="ff1+2">Final Fantasy 1+2</option>
-                <option value="fe">Fire Emblem</option>
-                <option value="m3">Mother 3</option>
-                <option value="pkmem">Pokemon Emerald</option>
-                <option value="pkmfr">Pokemon Fire Red</option>
-                <option value="pkmlg">Pokemon Leaf Green</option>
-                <option value="pkmr">Pokemon Ruby</option>
-                <option value="pkms">Pokemon Sapphire</option>
-                <option value="sma">Super Mario Advance</option>
-                <option value="sma2">Super Mario Advance 2</option>
-                <option value="sma3">Super Mario Advance 3</option>
-                <option value="sma4">Super Mario Advance 4</option>
-                <option value="wl4">Wario Land 4</option>
-
-
-            </select> 
+            <div id="select-rom" hidden>
+                <p>Select a game to start with:</p>
+                <select style="padding:.5em; border:2px" onchange="onHomebrewListSelected()" id="homebrew-list">
+                    <option value="ff1+2">Final Fantasy 1+2</option>
+                    <option value="fe">Fire Emblem</option>
+                    <option value="m3">Mother 3</option>
+                    <option value="pkmem">Pokemon Emerald</option>
+                    <option value="pkmfr">Pokemon Fire Red</option>
+                    <option value="pkmlg">Pokemon Leaf Green</option>
+                    <option value="pkmr">Pokemon Ruby</option>
+                    <option value="pkms">Pokemon Sapphire</option>
+                    <option value="sma">Super Mario Advance</option>
+                    <option value="sma2">Super Mario Advance 2</option>
+                    <option value="sma3">Super Mario Advance 3</option>
+                    <option value="sma4">Super Mario Advance 4</option>
+                    <option value="wl4">Wario Land 4</option>
+    
+    
+                </select> 
 
             <p>choose your own file:<br><input style="padding:.5em; border:2px solid white;" type="file" id="romFile"
                     onchange="onFileSelected()" /></p>
@@ -421,6 +438,7 @@
             console.log('gameID', gameID)
             Module.HEAPU8.set(u8, romBuffer)
             var ret = Module._loadRom(u8.length)
+            document.getElementById('welcome').hidden = true
             loadSaveGame(0, function () {
                 Module._resetCpu()
                 isRunning = true
