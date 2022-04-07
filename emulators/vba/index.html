@@ -142,8 +142,7 @@
         <div id="wasm-loading">
             Loading WebAssembly, please wait...
         </div>
-            <div id="select-rom" >
-                <div hidden>
+            <div id="select-rom" hidden>
                 <p>Select a game to start with:</p>
                 <select style="padding:.5em; border:2px" onchange="onHomebrewListSelected()" id="homebrew-list">
                     <option value="">Select</option>
@@ -164,7 +163,6 @@
 
             <p>choose your own file:<br><input style="padding:.5em; border:2px solid white;" type="file" id="romFile"
                     onchange="onFileSelected()" /></p>
-                </div>
         </div>
         <hr> Ver. 2021.01.14 | <a target="_blank"
             href="https://github.com/44670/vba-next-wasm">https://github.com/44670/vba-next-wasm</a>
@@ -436,7 +434,6 @@
             console.log('gameID', gameID)
             Module.HEAPU8.set(u8, romBuffer)
             var ret = Module._loadRom(u8.length)
-            document.getElementById('welcome').hidden = true
             loadSaveGame(0, function () {
                 Module._resetCpu()
                 isRunning = true
