@@ -142,7 +142,8 @@
         <div id="wasm-loading">
             Loading WebAssembly, please wait...
         </div>
-            <div id="select-rom" hidden>
+            <div id="select-rom" >
+                <div hidden>
                 <p>Select a game to start with:</p>
                 <select style="padding:.5em; border:2px" onchange="onHomebrewListSelected()" id="homebrew-list">
                     <option value="">Select</option>
@@ -163,7 +164,7 @@
 
             <p>choose your own file:<br><input style="padding:.5em; border:2px solid white;" type="file" id="romFile"
                     onchange="onFileSelected()" /></p>
-
+                </div>
         </div>
         <hr> Ver. 2021.01.14 | <a target="_blank"
             href="https://github.com/44670/vba-next-wasm">https://github.com/44670/vba-next-wasm</a>
