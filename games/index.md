@@ -107,6 +107,8 @@ title: Games
             <li><a href="blueball/">Blueball's Cool Adventure</a></li>
             <li><a href="pico8/">Pico-8 Games</a></li>
             <li><a href="celeste/">Celeste Games</a></li>
+            <li><a href="mariofps/">Super Mario FPS</a></li>
+            <li><a href="fireboywatergirl/">Fireboy and Watergirl</a></li>
             <li><a href="egg_ascent/">Egg Ascent</a><p style="color:##EF883C";>[MESACOMPLEX SEMIEXCLUSIVE!]</p></li>
             <br>
         </ul>
