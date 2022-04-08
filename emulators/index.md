@@ -31,6 +31,8 @@ title: Emulators
     <li><a href="emulatrix/">Emulatrix</a></li>
     <li><a href="parallel-n64/">Parallel N64</a></li>
     <li><a href="vba/">VBA (GBA)</a></li>
-    <li><a href="webretro/">WebRetro (Gensis, NES,SNES,N64,GB,GBC and GBA)</a></li>
+    <li><a href="webretro/">WebRetro (Gensis, NES,SNES,N64,GB,GBC and GBA) webretro/src/roms</a></li>
     <li><a href="emulator.js/">Emulator.js (NES,SNES,N64,GB,GBC,GBA,PS1,DS,VB, and Sega Gensis)</a></li>
+    <img href="games.png></img>
+
 </ul>
